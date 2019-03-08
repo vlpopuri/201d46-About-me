@@ -1,5 +1,7 @@
 'use strict';
 
+function question1(){
+
 var favorite_color = prompt('is nicholas\'s favorite color red');
 
 var favorite_color_correct_answer = 'no';
@@ -12,8 +14,11 @@ if(favorite_color === favorite_color_correct_answer){
   alert('nope');
 }
 
+}
+question1();
 
 
+function question2(){
 
 var favorite_game = prompt('Answer nicholas\s favorite game?');
 favorite_game = favorite_game.toUpperCase();
@@ -26,7 +31,11 @@ if ( favorite_game === 'BASEBALL' || favorite_game ==='FOOTBALL') {
   } else { 
    alert ('can we watch something else');
   }
+}
 
+question2();
+
+function question3(){
   var favorite_food = prompt('what is your favorite food ?');
   var favorite_food_correct_answer = 'MAC & CHEESE';
 
@@ -39,7 +48,12 @@ if ( favorite_game === 'BASEBALL' || favorite_game ==='FOOTBALL') {
   } else {
     alert ('I wouldn/t eat that food ever');
   }
-  
+}
+
+question3();
+
+function question4(){
+
   var favorite_movie = prompt('is The Terminator your favorite movie? ');
   var favorite_movie_correct_answer = 'YES';
   favorite_movie = favorite_movie.toUpperCase();
@@ -54,6 +68,12 @@ if ( favorite_game === 'BASEBALL' || favorite_game ==='FOOTBALL') {
 
   }
 
+}
+
+question4();
+
+function question5(){
+
   var favorite_touristplace = prompt('is Mexico your favorite tourist destination?');
   var favorite_touristplace_correct_answer = 'YES';
 
@@ -65,9 +85,13 @@ if ( favorite_game === 'BASEBALL' || favorite_game ==='FOOTBALL') {
   }else {
     alert ('There is no place like that');
   }
+}
+
+question5();
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
+function question6(){
 
 var favorite_number_correct_answer = '3';
 
@@ -78,7 +102,9 @@ for (var i = 0; i < 5; i++) {
     break;
   }
 }
+}
 
+question6();
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
