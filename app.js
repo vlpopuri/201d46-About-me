@@ -97,16 +97,79 @@ var favorite_number_correct_answer = '3';
 
 for (var i = 0; i < 5; i++) {
   var favorite_number = prompt('what is my favorite number?');
-  if( favorite_number === '3') {
+  if( favorite_number === favorite_number_correct_answer ) {
     alert(' you got that right');
-    break;
+    
   }
+  else if (favorite_number > favorite_number_correct_answer)
+  {
+   alert('The number guessed is high');
+
+  }
+
+  else  {
+
+    alert ('The number guessed is low');
+  }
+
 }
 }
 
 question6();
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//create an array for favorite icecreams.
+var ice_creams = ['rocky-road', 'chocolate-overload', 'chocolate chocolate with chocolate fudge', 'coffee', 'lemon sorbet', 'pistachio','butter scotch'];
+
+for(var i = 0; i < ice_creams.length; i++){
+  console.log(i);
+  console.log(ice_creams[i]);
+}
+var user_response;
+//n and m are indexes of user responses
+var n;
+var m;
+
+for(var i = 0; i < ice_creams.length; i++){
+  
+  user_response=prompt('Enter your first icecream');
+  
+  while(user_response === '' || user_response === null){
+    // alert('give me an answer');
+    user_response = prompt('i said give me an answer');
+  }
+
+ // find the index of the first ice cream if it exists in the array
+  n= ice_creams.indexOf(user_response);
+  if (n>=0){
+   alert ('you guessed the first icecream right.')
+
+    user_response=prompt('guess the second icecream');
+   // user_response=user_response.toLowerCase;
+    m=ice_creams.indexOf(user_response);
+
+    if (m>=0)
+    {alert ('Your guesses were : ' +  ice_creams [n] +  ' and ' + ice_creams[m]);
+    console.log(ice_creams [n]) ;
+    console.log (ice_creams [m]);
+    
+       break;
+    }
+      
+
+    else { alert ('you did not guess the second icecream. Try again')}
+    
+  }
+
+ // else {alert (' Your guesses were incorrect');}
+}
+
+// do {
+//   favorite_ice_cream = prompt('what is your favorite ice cream');
+// }while(favorite_ice_cream === '' || favorite_ice_cream === null);
+// while(true){
+//   console.log('hi');
+// }
 
 
   
